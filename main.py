@@ -24,7 +24,7 @@ def compute_ear(eye):
     return (A + B) / (2.0 * C)
 
 # 카메라 열기
-cap = cv2.VideoCapture(2, cv2.CAP_AVFOUNDATION)
+cap = cv2.VideoCapture("test2.avif")
 if not cap.isOpened():
     print("카메라를 열 수 없습니다.")
     exit()
@@ -128,6 +128,7 @@ while True:
             cv2.putText(frame, text, (10, 30 + i * 20), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 1)
 
     cv2.imshow("Facial Expression + Health + Fatigue", frame)
+    cv2.imwrite('output.jpg',frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
