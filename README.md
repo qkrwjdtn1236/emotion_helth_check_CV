@@ -266,8 +266,8 @@ python src/main.py --input image.jpg
 ---
 
 ## 모델 결과
-![image]('/train8/train_batch34202.jpg')
-![image]('/train8/val_batch2_labels.jpg')
+![image](./train8/train_batch34202.jpg)
+![image](./train8/val_batch2_labels.jpg)
 
 ## 성과 수치
 
